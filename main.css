@@ -1,0 +1,72 @@
+a {
+    text-decoration:none;
+  }
+* {
+    overflow: hidden;
+    margin-left: 0%;
+}
+
+body{
+    background-image: url(image/Back.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin-top: 5%;
+}
+#logo{
+    font-size: 4em;
+    text-align: center;
+}
+
+.logo{
+    color: orange;
+    font-family: "Attack";
+    position: relative;
+    left: 4%;
+    text-shadow: 0px 1px 10px orange;
+    -webkit-text-stroke: 1px black;
+    display: inline-block;
+}
+.logo span{
+    color: orange;
+    font-family: "Attack";
+    text-shadow: 0px 1px 10px orange;
+    -webkit-text-stroke: 1px black;
+}
+
+.menu{
+    width: 130px;
+    float: right;
+    display: block;
+    margin-top: 2%;
+    font-size: 4em;
+    position: relative;
+    color: black;
+    right: 5%;
+}
+
+.cont{
+    height: 100px;
+    position: relative;
+    width:100px;
+}
+
+.adress{
+    color: white;
+    height: inherit;
+}
+.adress-wrap{
+    position: relative;
+}
+.adress-wrap a{
+    color: white;
+}
+
+
+
+
+
+@font-face {
+    font-family: "Attack"; /* Гарнитура шрифта */
+    src: url(fonts/AttackGraffiti-3zRBM.ttf); /* Путь к файлу со шрифтом */
+}
+

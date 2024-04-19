@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Attack"; /* Гарнитура шрифта */
+    src: url(fonts/AttackGraffiti-3zRBM.ttf); /* Путь к файлу со шрифтом */
+}
+a{
+    text-decoration: none;
+}
+* {
+    overflow-x: hidden;
+    scrollbar-width: none;  /* толщина */
+    margin-left: 0%;
+}
+
+body{
+    background-color: black;
+    margin-top: 5%;
+    height: 2000px;
+}
+
+
+
+#logo{
+    font-size: 4em;
+    text-align: center;
+}
+
+.logo{
+    color: orange;
+    font-family: "Attack";
+    position: fixed;
+    text-shadow: 0px 1px 10px orange;
+    -webkit-text-stroke: 1px black;
+    left: 4%;
+}
+.logo span{
+    color: orange;
+    font-family: "Attack";
+    text-shadow: 0px 1px 10px orange;
+    -webkit-text-stroke: 1px black;
+}
+.photo{
+    padding-left: 10%;
+    text-align: center;
+    scrollbar-width: none;  /* толщина */
+    overflow-y: scroll;
+    height: auto;
+}
+.right-menu{
+    position: fixed;
+    font-size: 2em;
+    right: 4%;
+    text-align: right;
+    color: white;
+}
+.right-menu a{
+    color: white;
+}
+.mg{
+    margin-top: 50%;
+}
+.last{
+    margin-bottom: 50%;
+}
+.news{
+    width: 600px;
+    height: 500px;
+    background-color: gray;
+}
+.block{
+    height: 75%;
+    width: 100%;
+    background-color: red;
+}
+.comment{
+    height: 24%;
+    width: 100%;
+    border-top: 2px white solid;
+}
+.comm{
+    margin-bottom: 5%;
+    word-break: break-all;
+    width: 100%;
+    text-align: start;
+    height: auto;
+    border: 2px solid white;
+}
+
+.kvadrat{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 500px;
+    border: red 4px solid;
+    color: white;
+}

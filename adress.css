@@ -1,0 +1,77 @@
+.adr1{
+    animation: adr1 3s alternate forwards;
+    animation-iteration-count:infinite;
+}
+.adr2{
+    animation: adr2 3s alternate forwards;
+    animation-iteration-count:infinite;
+}
+.adr3{
+    animation: adr3 3s alternate forwards;
+    animation-iteration-count:infinite;
+}
+
+.ad1{
+    animation: adr1 3s alternate-reverse forwards;
+    animation-iteration-count:infinite;
+}
+.ad2{
+    animation: adr2 3s alternate-reverse forwards;
+    animation-iteration-count:infinite;
+}
+.ad3{
+    animation: adr3 3s alternate-reverse forwards;
+    animation-iteration-count:infinite;
+}
+
+.a1{
+    width: 200px;
+    position: absolute;
+    font-size: 0.5em;
+    top: 0%;
+}
+.a2{
+    position: absolute;
+    font-size: 0.5em;
+    top: 25%;
+}
+.a3{
+    position: absolute;
+    font-size: 0.5em;
+    top: 50%;
+}
+
+#a1{
+    opacity: 0%;
+}
+#a2{
+    opacity: 0%;
+}
+#a3{
+    opacity: 0%;
+}
+
+@keyframes adr1{
+    0% {
+        top: -50%;
+      }
+      100% {
+        top: 0%;
+      }
+}
+@keyframes adr2{
+    0% {
+        top: -50%;
+      }
+      100% {
+        top: 25%;
+      }
+}
+@keyframes adr3{
+    0% {
+        top: -50%;
+      }
+      100% {
+        top: 50%;
+      }
+}

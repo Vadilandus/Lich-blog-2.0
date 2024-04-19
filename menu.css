@@ -1,0 +1,91 @@
+
+.rotate{
+    animation: rotate 3s alternate forwards;
+
+}
+.probel1{
+    animation: upp1 3s alternate forwards;
+    animation-iteration-count:infinite;
+}
+.probel2{
+    animation: upp2 3s alternate forwards;
+    animation-iteration-count:infinite;
+}
+.probel3{
+    animation: upp3 3s alternate forwards;
+    animation-iteration-count:infinite;
+}
+.pro1{
+    animation: upp1 3s alternate-reverse forwards;
+    animation-iteration-count:infinite;
+}
+.pro2{
+    animation: upp2 3s alternate-reverse forwards;
+    animation-iteration-count:infinite;
+}
+.pro3{
+    animation: upp3 3s alternate-reverse forwards;
+    animation-iteration-count:infinite;
+}
+.box1{
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    border-top: 4px solid orange;
+    top: 30%;
+    left: 10%;
+}
+.box2{
+    left: 10%;
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    top: 50%;
+    border-top: 4px solid orange;
+}
+.box3{
+    left: 10%;
+    top: 70%;
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    border-top: 4px solid orange;
+}
+
+@keyframes rotate{
+
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(90deg);
+      }
+    
+}
+@keyframes upp1{
+    0% {
+        top: 30%;
+      }
+      100% {
+        top: 0%;
+      }
+}
+@keyframes upp2{
+    0% {
+        top: 50%;
+      }
+      100% {
+        top: 45%;
+      }
+}
+@keyframes upp3{
+    0% {
+        top: 70%;
+      }
+      100% {
+        top: 95%;
+      }
+}
