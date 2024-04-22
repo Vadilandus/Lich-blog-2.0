@@ -1,22 +1,34 @@
 <?php
-
-require_once('db.php');
-
-$login = $_POST["login"];
-$pass = $_POST["pass"];
-
-if (empty($login) || empty($pass))
-{
-    echo 'Заполните все полня';
-}else{
-    $sql = "SELECT * FROM 'user' WHERE login = '$login' AND pass = '$pass' ";
-    $result = $conn->query($sql);
-    
-    if($result->num_rows > 0){
-        while($row = $result->fetch_assoc()){
-            echo 'Добро пожаловать' . $row['login']; 
+    session_start();
+    include('config.php');
+    if (isset($_POST['login'])) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $query = $connection->prepare("SELECT * FROM user WHERE login=:username");
+        $query->bindParam("username", $username, PDO::PARAM_STR);
+        $query->execute();
+        $result = $query->fetch(PDO::FETCH_ASSOC);
+        if (!$result) {
+            echo '<p class="error">Неверные пароль или имя пользователя!</p>';
+        } else {
+            if (password_verify($password, $result['pass'])) {
+                $_SESSION['user_id'] = $result['id'];
+                echo '<p class="success">Поздравляем, вы прошли авторизацию!</p>';
+            } else {
+                echo '<p class="error"> Неверные пароль или имя пользователя!</p>';
+            }
         }
-    }else{
-        echo 'нет такого пользователя';
     }
-}
+?>
+<link rel="stylesheet" href="register.css">
+<form method="post" action="" name="signin-form">
+  <div class="form-element">
+    <label>Username</label>
+    <input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
+  </div>
+  <div class="form-element">
+    <label>Password</label>
+    <input type="password" name="password" required />
+  </div>
+  <button type="submit" name="login" value="login">Log In</button>
+</form>

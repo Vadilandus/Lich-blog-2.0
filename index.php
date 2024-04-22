@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Myself</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="adress.css">
+    <link rel="stylesheet" href="cursor.css">
+
 </head>
 <body>
-    <form action="register.php" method="post">
-        <input type="text" placeholder="login" name="login">
-        <input type="text" placeholder="password" name="pass">
-        <input type="text" placeholder="contuine password" name="pass2">
-        <input type="text" placeholder="email" name="email">
-        <button type="submit">Register</button>
-    </form>
-
-    <form action="login.php" method="post" >
-        <input type="text" placeholder="login" name="login">
-        <input type="text" placeholder="password" name="pass">
-        <button type="submit">Login</button>
-    </form>
-    
+    <script src="js/cursor.js"></script>
+    <script src="js/script.js"></script>
+        <div class="logo">
+            <a href="index.php"><span id="logo">Vadik <br> Staryi</span></a>
+        </div>
+        <div class="menu">
+            <div class="cont">
+                <span class="box1"></span>
+                <span class="box2"></span>
+                <span class="box3"></span>
+            </div>
+            <div class="adress">
+                <div class="adress-wrap">
+                    <a class="a1" id="a1">About me</a>
+                    <a class="a2" id="a2" href="contacts.php">Contacts</a><br>
+                    <a class="a3" id="a3" href="news.php">Blog</a><br>
+                </div>
+            </div>
+    </div>
+    <div class="follow-cursor"></div>
 </body>
 </html>

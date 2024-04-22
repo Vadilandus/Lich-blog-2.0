@@ -14,7 +14,6 @@ a{
 body{
     background-color: black;
     margin-top: 5%;
-    height: 2000px;
 }
 
 
@@ -55,42 +54,22 @@ body{
 .right-menu a{
     color: white;
 }
-.mg{
-    margin-top: 50%;
-}
-.last{
-    margin-bottom: 50%;
-}
-.news{
-    width: 600px;
-    height: 500px;
-    background-color: gray;
-}
-.block{
-    height: 75%;
-    width: 100%;
-    background-color: red;
-}
-.comment{
-    height: 24%;
-    width: 100%;
-    border-top: 2px white solid;
-}
-.comm{
-    margin-bottom: 5%;
-    word-break: break-all;
-    width: 100%;
-    text-align: start;
-    height: auto;
-    border: 2px solid white;
-}
 
-.kvadrat{
+.scroll{
+    overflow-y: scroll;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
-    width: 500px;
-    border: red 4px solid;
+    height: 700px;
+    width: 700px;
     color: white;
+}
+.news{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    background-color: blue;
+    height: 500px;
+    margin-top: 5%;
+    margin-bottom: 40%;
 }
