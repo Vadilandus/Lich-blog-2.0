@@ -11,9 +11,9 @@
         <a href="index.php"><span id="logo">Vadik <br> Staryi</span></a>
     </div>
     <div class="link-me">
-        <a href="https://vk.com/vadim_antonyuk"><img src="image/vk.png" width="64px" class="ops"></a>
         <a href="mailto:antonuk_proo@mail.ru"><img src="image/mail.png" width="64px" alt="" class="ops"></a>
         <a href="https://t.me/VadimStaryi"><img src="image/telegram.png"  width="64px" class="ops"></a> 
+        <a href="https://vk.com/vadim_antonyuk"><img src="image/vk.png" width="64px" class="ops"></a>
         <a href="#" onclick="alert('Кто этим пользуется?')"><img src="image/not.png" width="64px" alt="" class="ops" ></a>
         <a href="files/Резюме Антонюк Вадим Сергеевич - Backend-разработчик.pdf" download><img src="image/rezum.png" width="64px" alt=""></a>
     </div>

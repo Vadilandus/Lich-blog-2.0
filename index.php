@@ -25,7 +25,7 @@
             </div>
             <div class="adress">
                 <div class="adress-wrap">
-                    <a class="a1" id="a1">About me</a>
+                    <a class="a1" id="a1" href="myself.php">About me</a>
                     <a class="a2" id="a2" href="contacts.php">Contacts</a><br>
                     <a class="a3" id="a3" href="news.php">Blog</a><br>
                 </div>

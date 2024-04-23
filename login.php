@@ -11,11 +11,11 @@
         if (!$result) {
             echo '<p class="error">Неверные пароль или имя пользователя!</p>';
         } else {
-            if (password_verify($password, $result['pass'])) {
-                $_SESSION['user_id'] = $result['id'];
+            if (password_verify($password,$result['pass'])) {
+                $_SESSION['user_id'] = $result['login'];
                 echo '<p class="success">Поздравляем, вы прошли авторизацию!</p>';
             } else {
-                echo '<p class="error"> Неверные пароль или имя пользователя!</p>';
+                echo '<p class="error"> Неверные пароль!</p>';
             }
         }
     }

@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['user_id'])){
+        header('Location: login.php');
+        exit;
+    } else {
+        // Покажите пользователю страницу
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,21 +16,15 @@
     <link rel="stylesheet" href="cursor.css">
     <title>News</title>
 </head>
-<?php 
-$user = '';
-?>
+
 <body>
     <script src="js/cursor.js"></script>
         <div class="logo">
             <a href="index.php"><span id="logo">Vadik <br> Staryi</span></a>
         </div>
         <div class="right-menu">
-            <?php if($user) { ?>
-                <p>Hello</p>
-            <?php } else { ?>
                 <a href="register.php">Register</a>
                 <a href="login.php">Log in</a>
-            <?php } ?>
         </div>
 
         <div class="scroll">
