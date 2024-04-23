@@ -20,6 +20,7 @@
             $result = $query->execute();
             if ($result) {
                 echo '<p class="success">Регистрация прошла успешно!</p>';
+                header('Location: login.php');
             } else {
                 echo '<p class="error">Неверные данные!</p>';
             }

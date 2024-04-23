@@ -1,7 +1,7 @@
 <?php
     session_start();
-    if(isset($_SESSION['user_id'])){
-        header('Location: news1.php');
+    if(!isset($_SESSION['user_id'])){
+        header('Location: register.php');
         exit;
     } else {
         // Покажите пользователю страницу
@@ -23,8 +23,8 @@
             <a href="index.php"><span id="logo">Vadik <br> Staryi</span></a>
         </div>
         <div class="right-menu">
-                <a href="register.php" id="too">Register</a><br>
-                <a href="login.php" id="too">Log in</a>
+            <?php echo $_SESSION['user_id']?><br>
+            <a href="logout.php">Log out</a>
         </div>
 
         <div class="scroll">

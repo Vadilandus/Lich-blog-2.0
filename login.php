@@ -14,6 +14,7 @@
             if (password_verify($password,$result['pass'])) {
                 $_SESSION['user_id'] = $result['login'];
                 echo '<p class="success">Поздравляем, вы прошли авторизацию!</p>';
+                echo '<a class="success" href="index.php">Вернуться домой</a>';
             } else {
                 echo '<p class="error"> Неверные пароль!</p>';
             }

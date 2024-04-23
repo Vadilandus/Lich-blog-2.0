@@ -14,7 +14,7 @@
 <body>
     <script src="js/cursor.js"></script>
     <script src="js/script.js"></script>
-        <div class="logo">
+        <div class="logo" id="too">
             <a href="index.php"><span id="logo">Vadik <br> Staryi</span></a>
         </div>
         <div class="menu">
@@ -24,7 +24,7 @@
                 <span class="box3"></span>
             </div>
             <div class="adress">
-                <div class="adress-wrap">
+                <div class="adress-wrap" id="too" >
                     <a class="a1" id="a1" href="myself.php">About me</a>
                     <a class="a2" id="a2" href="contacts.php">Contacts</a><br>
                     <a class="a3" id="a3" href="news.php">Blog</a><br>

@@ -48,11 +48,17 @@ body{
     position: fixed;
     font-size: 2em;
     right: 4%;
-    text-align: right;
+    text-align: center;
     color: white;
 }
 .right-menu a{
     color: white;
+
+
+}
+.right-menu a:hover{
+    color: orange;
+
 }
 
 .scroll{
@@ -65,11 +71,33 @@ body{
     color: white;
 }
 .news{
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-    background-color: blue;
+    background-color: rgba(255, 193, 68, 0.47);
     height: 500px;
     margin-top: 5%;
     margin-bottom: 40%;
+}
+.label{
+    text-align: center;
+    color:navajowhite;
+}
+.author{
+    text-align: left;
+    color:rgb(255, 220, 177);
+}
+.text{
+    float: left;
+    height: 300px;
+}
+.image_news{
+    text-align: end;
+    margin-right: 5%;
+    display: block;
+    height: 300px;
+}
+.like{
+    text-align: end;
 }
