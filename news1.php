@@ -23,7 +23,7 @@
             <a href="index.php"><span id="logo">Vadik <br> Staryi</span></a>
         </div>
         <div class="right-menu">
-            <?php echo $_SESSION['user_id']?><br>
+            <a href="profile.php"><?php echo $_SESSION['user_id']?></a><br>
             <a href="logout.php">Log out</a>
         </div>
 
